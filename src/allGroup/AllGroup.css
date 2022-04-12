@@ -1,0 +1,40 @@
+.AllGroupList{
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.GroupList{
+    width: 180px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.NextButtonNameDiv{
+    position: absolute;
+    right: auto;
+    bottom: 80px;
+}
+
+.NextButtonName{
+    background-color: rgb(13, 87, 224);
+    color: white;
+    font-size: 24px;
+    padding: 19px;
+    cursor: pointer;
+    border-radius:32px;
+    box-shadow: 0 0 5px rgb(2, 54, 150),
+                0 0 25px rgb(2, 54, 150),
+                0 0 50px rgb(2, 54, 150),
+                0 0 100px rgb(2, 54, 150);
+}
+.NextButtonName:hover{
+    color: white;
+    box-shadow: 0 0 5px #fff,
+                0 0 25px #fff,
+                0 0 50px #fff,
+                0 0 100px #fff;
+}

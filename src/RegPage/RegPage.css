@@ -1,0 +1,75 @@
+.RegPage{
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.2);
+    
+
+}
+.TimeDiv,.scoreDiv{
+    font-size: 15px;
+    display: flex;
+    align-items: center
+
+}
+.VALUE{
+    color: white;
+}
+.ol{
+    font-size: 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 15px 5px rgb(194 194 194);
+    background: rgb(255, 255, 255);
+}
+.input{
+    padding: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-right: 5px;
+}
+.Addbutton{
+    color:#001B4DFF;
+    /* font-size: 25px; */
+    font-weight: 700;
+    cursor: pointer;
+    padding: 9px;
+}
+.Addbutton:hover{
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.403),
+                0 0 25px rgba(255, 255, 255, 0.403),
+                0 0 50px rgba(255, 255, 255, 0.403),
+                0 0 100px rgba(255, 255, 255, 0.403);
+}
+.title{
+    text-align: center;
+    color: antiquewhite;
+
+}
+.titleText{
+    color: antiquewhite;
+    text-align: center;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.GroupListDiv{
+    display: flex;
+    flex-direction: column;
+}
+.NextButtonDiv{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    
+}
+.NextButton{
+    width: 50px;
+    font-size: 24px;
+    color: #001B4DFF !important;
+    cursor: pointer;
+    padding: 10px;
+}
+.NextButton:hover{
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.403),
+                0 0 25px rgba(255, 255, 255, 0.403),
+                0 0 50px rgba(255, 255, 255, 0.403),
+                0 0 100px rgba(255, 255, 255, 0.403);
+}

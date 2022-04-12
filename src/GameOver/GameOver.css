@@ -1,0 +1,29 @@
+
+.GameOverDiv{
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.haxtox{
+    color:red;
+    font-size: 44px;
+    margin-bottom: 0;
+}
+.GameStartButton{
+    width: 100px;
+    height: 100px;
+    font-size: 21px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.winnerText{
+    margin-top: 2px;
+    margin-bottom: 0;
+    font-size: 27px;
+    text-align: center;
+    color: white;
+}
