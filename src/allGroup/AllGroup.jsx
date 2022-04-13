@@ -1,5 +1,5 @@
 
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import './AllGroup.css'
 
 function AllGroup({allGroup,nextButtonClick,words,nowPleyer,setWiner,setNowPleyer,setGameStart,scoreValue}){
@@ -19,7 +19,7 @@ function AllGroup({allGroup,nextButtonClick,words,nowPleyer,setWiner,setNowPleye
         }
 
         allGroup.forEach((elem)=>{
-            if(elem[1] >= scoreValue ){
+            if(elem.score >= scoreValue ){
                 setGameStart('GameOver')
                 setWiner(elem)
             }
@@ -34,11 +34,11 @@ function AllGroup({allGroup,nextButtonClick,words,nowPleyer,setWiner,setNowPleye
             <h2 className='title a'> Խմբերի Միավորները</h2>
             <ol className='ol'>
             {
-                allGroup.map((elem,index)=><li className='GroupList' key={index}><span>{elem[0]}</span> <span>{elem[1]}</span></li>)
+                allGroup.map((elem,index)=><li className='GroupList' key={index}><span>{elem.name}</span> <span>{elem.score}</span></li>)
             }
             </ol>
             <div className='NextButtonNameDiv'>
-                <button onClick={nextButtonClick} className='NextButtonName'>{allGroup[nowPleyer]?allGroup[nowPleyer][0]+' '+'>':"" }</button>
+                <button onClick={nextButtonClick} className='NextButtonName'>{allGroup[nowPleyer]?allGroup[nowPleyer].name+' '+'>':"" }</button>
             </div>
         </div>
     )

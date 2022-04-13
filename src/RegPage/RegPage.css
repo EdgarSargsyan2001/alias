@@ -1,9 +1,9 @@
 .RegPage{
+
     flex-direction: column;
     align-items: center;
     background: rgba(0, 0, 0, 0.2);
     
-
 }
 .TimeDiv,.scoreDiv{
     font-size: 15px;
@@ -29,9 +29,9 @@
 .Addbutton{
     color:#001B4DFF;
     /* font-size: 25px; */
-    font-weight: 700;
+    font-weight: 700 !important;
     cursor: pointer;
-    padding: 9px;
+    padding: 9px !important;
 }
 .Addbutton:hover{
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.403),
@@ -41,11 +41,11 @@
 }
 .title{
     text-align: center;
-    color: antiquewhite;
+    color: #FFF;
 
 }
 .titleText{
-    color: antiquewhite;
+    color: #FFF;
     text-align: center;
     margin-right: 10px;
     font-size: 20px;
@@ -61,8 +61,8 @@
     
 }
 .NextButton{
-    width: 50px;
-    font-size: 24px;
+    width: 50px !important;
+    font-size: 24px !important;
     color: #001B4DFF !important;
     cursor: pointer;
     padding: 10px;

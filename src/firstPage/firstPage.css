@@ -2,7 +2,6 @@
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
-    background: rgb(0, 255, 204);
     background-image: url('https://img.freepik.com/free-vector/abstract-blue-geometric-shapes-background_1035-17545.jpg?w=2000');
     background-size: cover;
     
@@ -18,6 +17,7 @@
     width: 120px;
     height: 120px;
     border-radius: 50%;
+    color:black !important;
     font-size: 24px;
     display: flex;
     justify-content: center;
@@ -26,6 +26,7 @@
     cursor: pointer;
 }
 .playButtnn:hover{
+    transition: 0.5s;
     box-shadow: 0 0 5px #fff,
                 0 0 25px #fff,
                 0 0 50px #fff,

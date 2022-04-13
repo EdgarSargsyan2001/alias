@@ -46,11 +46,11 @@ function RegPage({nextButtonClick,TimeValue,setTimeValue,scoreValue,setScoreValu
                     setAllGroup(
                             [
                                 ...allGroup,
-                                [
-                                   GroupName,
-                                   0
+                                {
+                                   name:GroupName,
+                                   score:0
 
-                                ]
+                                }
                             ]
                     )
                             
@@ -69,7 +69,7 @@ function RegPage({nextButtonClick,TimeValue,setTimeValue,scoreValue,setScoreValu
                 <div className='GroupListDiv'>
                     <ol className='ol'>
                         {
-                            allGroup?.map((elem,index)=><li key={index}>{elem[0]}</li>)
+                            allGroup?.map((elem,index)=><li key={index}>{elem.name}</li>)
                         }
                     </ol>
                 </div>

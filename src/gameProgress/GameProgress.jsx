@@ -1,7 +1,7 @@
 import { useEffect,useState } from 'react'
 import './gameProgress.css'
 
-function GameProgress({words,playerGroup,TimeValue,setGameStart,allGroup,setAllGroup}){
+function GameProgress({words,playerGroup,TimeValue,setGameStart}){
 
     const [timeText,setTimeText] = useState(TimeValue)
     const [wordtext,setWordText] = useState('')
@@ -12,11 +12,8 @@ function GameProgress({words,playerGroup,TimeValue,setGameStart,allGroup,setAllG
 
         if(text == "add"){
             setCount(prev=>prev+1)
-            playerGroup[1]++
-            setAllGroup([...allGroup]
+            playerGroup.score++
             
-            )
-
         }
 
         setflag(Math.random())
@@ -29,10 +26,8 @@ function GameProgress({words,playerGroup,TimeValue,setGameStart,allGroup,setAllG
         },1000)
 
 
-        return ()=>{
-            clearTimeout(clear)
-        }
-
+        return ()=>clearTimeout(clear)
+            
     },[])
 
     useEffect(()=>{
@@ -55,7 +50,7 @@ function GameProgress({words,playerGroup,TimeValue,setGameStart,allGroup,setAllG
 
     return (
         <div className="gameProgress default">
-            <h2 className='title uu'>{playerGroup[0]} </h2>
+            <h2 className='title uu'>{playerGroup.name} </h2>
             <p className='TimeText'>{timeText}</p>
             
 

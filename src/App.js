@@ -76,8 +76,6 @@ function App() {
         playerGroup={allGroup[nowPleyer]}
         TimeValue={TimeValue}
         setGameStart={setGameStart}
-        allGroup={allGroup}
-        setAllGroup={setAllGroup}
       
       />
     }
