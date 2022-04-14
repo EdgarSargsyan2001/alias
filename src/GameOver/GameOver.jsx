@@ -4,8 +4,19 @@ function GameOver({setNowPleyer,setAllGroup,setGameStart,winer,scoreValue}){
 
     const GameStartButton = ()=>{
         setNowPleyer(-1)
-        setAllGroup([])
         setGameStart(1)
+        setAllGroup([
+            {
+                id:5,
+                name:"Խումբ 1",
+                score:0
+              },
+              {
+                id:6,
+                name:"Խումբ 2",
+                score:0
+              }
+        ])
     }
 
     return (

@@ -11,12 +11,12 @@ function App() {
   const [words,setWords] = useState('')
   const [allGroup,setAllGroup] = useState([
     {
-      id:Math.random(),
+      id:5,
       name:"Խումբ 1",
       score:0
     },
     {
-      id:Math.random(),
+      id:6,
       name:"Խումբ 2",
       score:0
     }
