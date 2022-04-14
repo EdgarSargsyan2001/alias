@@ -14,7 +14,7 @@ function AllGroup({allGroup,nextButtonClick,words,nowPleyer,setWiner,setNowPleye
             setNowPleyer(0)
         
 
-        if(words.length < 3){
+        if(words.length < 20){
             setWiner(Math.random())
         }
 

@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './RegPage.css'
 
 
-function RegPage({nextButtonClick,TimeValue,setTimeValue,scoreValue,setScoreValue,allGroup,setAllGroup}){
+function RegPage({nextButtonClick,TimeValue,setTimeValue,deletePleyer,scoreValue,setScoreValue,allGroup,setAllGroup}){
 
     
 
@@ -47,6 +47,7 @@ function RegPage({nextButtonClick,TimeValue,setTimeValue,scoreValue,setScoreValu
                             [
                                 ...allGroup,
                                 {
+                                    id:Math.random(),
                                    name:GroupName,
                                    score:0
 
@@ -69,7 +70,12 @@ function RegPage({nextButtonClick,TimeValue,setTimeValue,scoreValue,setScoreValu
                 <div className='GroupListDiv'>
                     <ol className='ol'>
                         {
-                            allGroup?.map((elem,index)=><li key={index}>{elem.name}</li>)
+                            allGroup?.map((elem,index)=>
+                            <li className='list' key={index}>
+                                {elem.name}
+                                <button className='clisedButton' onClick={()=>deletePleyer(elem.id)}>X</button>
+                            
+                            </li>)
                         }
                     </ol>
                 </div>

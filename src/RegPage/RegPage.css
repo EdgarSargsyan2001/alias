@@ -15,16 +15,27 @@
     color: white;
 }
 .ol{
+    padding: 0;
+    padding:10px;
     font-size: 20px;
     border-radius: 4px;
     box-shadow: 0 0 15px 5px rgb(194 194 194);
     background: rgb(255, 255, 255);
+}
+.list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .input{
     padding: 10px;
     border-radius: 4px;
     text-decoration: none;
     margin-right: 5px;
+}
+.clisedButton{
+    cursor: pointer;
+    border-radius: 4px;
 }
 .Addbutton{
     color:#001B4DFF;
